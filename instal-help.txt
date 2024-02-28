@@ -1,0 +1,37 @@
+#//switch veriso of node
+#//https://www.howtoforge.com/how-to-manage-nodejs-versions-with-n-in-ubuntu-20-04/
+
+npx create-next-app@latest nextjs-dashboard --use-npm --example "https://github.com/vercel/next-learn/tree/main/dashboard/starter-example"   #####--//Zalozeni p[rojektu]
+#//https://www.answeroverflow.com/m/1104381976984682516   --local postgres with vercel
+#//https://gal.hagever.com/posts/running-vercel-postgres-locally --local postgres with vercel v dockeru
+#// https://www.simplenextjs.com/posts/next-postgresql // klasika pg a axios
+#https://nextjs.org/docs/app/building-your-application/routing/route-handlers #// Routing ,streaming, openai
+## chyby Eslint 
+## 1. sudo npm install -g eslint --unsafe-perm=true --allow-root
+
+#//Novy z predlohy
+#npx create-next-app@latest nextjs-dashboard --use-npm --example "https://github.com/vercel/next-learn/tree/main/dashboard/starter-example"
+#//Finty
+
+#npx create-react-app project_name --template all 
+
+npx create-next-app@latest nextjs-dashboard --use-npm --example "https://github.com/vercel/next-learn/tree/main/dashboard/starter-example"
+ssh -L 5435:localhost:5432  root@pgrs2r 
+
+
+## 2. mkdir ~/.npm-global
+#npm config set prefix '~/.npm-global'
+#export PATH=~/.npm-global/bin:$PATH
+#source ~/.profile
+## 2. EOF 
+
+cd nextjs-dashboard
+npm i
+npm run dev
+
+npm run lint       
+npm i use-debounce
+
+npm install next-auth@beta
+openssl rand -base64 32
+DO6nzfNLYQSAMOcCTEBg2rH67GCPF3UwILUfo/dQAYc=
