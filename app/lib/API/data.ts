@@ -15,15 +15,7 @@ export async function fetchIco(ico: string) {
     //const _myurl = `https://resvm1.issupport.cz/api/ares.php`;
     //const data = {            par:"a",            XXXXXXX : "NICCCCCCC",  "Cisla":879255  }
         //body: JSON.stringify(data),
-    const res = await fetch(_myurl, {
-        method: "GET",
-        headers: {
-            'content-type': 'application/json',
-        },
-    
-        
-    }
-    );
+    const res = await fetch(_myurl );
     //console.log("ico: ", ico, " ",_myurl );
 //    console.log("aaaa :" , cislo );
     

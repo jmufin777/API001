@@ -1,26 +1,5 @@
-//import { sql } from '@vercel/postgres';
-//import { pool } from '@/app/api/postgres'
-
-//import { Pool } from 'pg';
-
 import sql, { SQLStatement } from 'sql-template-strings';
 import {  conn } from '@/app/api/postgres2';
-
-
-
-
-/*
-const conn = new Pool({
-  user: process.env.POSTGRES_USER,
-  password: process.env.POSTGRES_PASSWORD,
-  host: process.env.POSTGRES_HOST,
-  //port: process.env.POSTGRES_PORT,
-  port:  5432,
-  database: process.env.POSTGRES_DATABASE,
-});
-*/
-
-
 
 import {
   CustomerField,
@@ -50,8 +29,8 @@ export async function fetchRevenue() {
     // console.log('Fetching revenue data...');
     // await new Promise((resolve) => setTimeout(resolve, 3000));
     console.log("Fetching data .....")
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-    console.log('Data se nacetly  za  vteriny ');
+    await new Promise((resolve) => setTimeout(resolve, 500));
+    console.log('Data loading ');
 //<Revenue>
     const data = await conn.query(`SELECT * FROM revenue`);
 
